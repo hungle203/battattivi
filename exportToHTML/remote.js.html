@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>remote.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e0957b;}
+.s1 { color: #c9c9d1;}
+.s2 { color: #e0957b; font-weight: bold;}
+.s3 { color: #c9c9d1;}
+</style>
+</head>
+<body bgcolor="#1d1d26">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+remote.js</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">Remote {</span>
+    <span class="s1">codeRemote</span><span class="s2">;</span>
+
+    <span class="s1">constructor(codeRemote) {</span>
+        <span class="s0">this</span><span class="s1">.codeRemote </span><span class="s3">= </span><span class="s1">codeRemote</span><span class="s2">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">turnOnOffTivi(tv) {</span>
+        <span class="s0">if</span><span class="s1">(</span><span class="s0">this</span><span class="s1">.codeRemote </span><span class="s3">=== </span><span class="s1">tv.codeRemote) {</span>
+            <span class="s1">tv.turnOnOff()</span><span class="s2">;</span>
+            <span class="s0">return </span><span class="s1">tv.status</span><span class="s2">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s1">setChanel(tv</span><span class="s2">, </span><span class="s1">number) {</span>
+        <span class="s0">if</span><span class="s1">(</span><span class="s0">this</span><span class="s1">.codeRemote </span><span class="s3">=== </span><span class="s1">tv.codeRemote) {</span>
+            <span class="s1">tv.switchChanel(number)</span><span class="s2">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s1">upChanel(tv) {</span>
+        <span class="s0">if</span><span class="s1">(</span><span class="s0">this</span><span class="s1">.codeRemote </span><span class="s3">=== </span><span class="s1">tv.codeRemote) {</span>
+            <span class="s1">tv.switchUpChanel()</span><span class="s2">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s1">downChanel(tv) {</span>
+        <span class="s0">if</span><span class="s1">(</span><span class="s0">this</span><span class="s1">.codeRemote </span><span class="s3">=== </span><span class="s1">tv.codeRemote) {</span>
+            <span class="s1">tv.switchDownChanel()</span><span class="s2">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s1">upVolume(tv) {</span>
+        <span class="s0">if</span><span class="s1">(</span><span class="s0">this</span><span class="s1">.codeRemote </span><span class="s3">=== </span><span class="s1">tv.codeRemote) {</span>
+            <span class="s1">tv.switchUpVolume()</span><span class="s2">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s1">downVolume(tv) {</span>
+        <span class="s0">if</span><span class="s1">(</span><span class="s0">this</span><span class="s1">.codeRemote </span><span class="s3">=== </span><span class="s1">tv.codeRemote) {</span>
+            <span class="s1">tv.switchDownVolume()</span><span class="s2">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span></pre>
+</body>
+</html>
